@@ -38,7 +38,7 @@ For example:
 brotli -d xx_036785.parquet.br
 ```
 
-On Ubuntu, brotli can be installed using APT:
+On Ubuntu, brotli can be installed through APT:
 
 ```bash
 sudo apt-get install brotli
@@ -94,4 +94,9 @@ Laghos (LAGrangian High-Order Solver) is a miniapp that solves the time-dependen
 
 The Laghos miniapp is part of the [CEED software suite](http://ceed.exascaleproject.org/software), a collection of software benchmarks, miniapps, libraries, and APIs for efficient exascale discretizations based on high-order finite element and spectral element methods.
 
-The CEED research is supported by the U.S. Department of Energy [Exascale Computing Project](https://exascaleproject.org/exascale-computing-project) (17-SC-20-SC), an effort responsible for the planning and preparation of a capable exascale ecosystem, including software, applications, hardware, advanced system engineering and early testbed platforms, in support of the nation’s exascale computing imperative.
+The CEED research is supported by the U.S. Department of Energy [Exascale Computing Project](https://exascaleproject.org/exascale-computing-project) (17-SC-20-SC), an effort responsible for the planning and preparation of a capable exascale ecosystem, including software, applications, hardware, advanced system engineering, and early testbed platforms, in support of the nation’s exascale computing imperative.
+
+Command used to run Laghos: `mpirun -np 32 ./laghos -p 3 -m data/box01_hex.mesh -rs 2 -rp 3 -tf 5.0 -pa -visit -print -k <datadir>`.
+
+Thanks!
+
