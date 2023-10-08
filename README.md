@@ -47,7 +47,7 @@ sudo apt-get install brotli
 Schema and Statistics
 =
 
-Here is a quick metadata dump of the sample parquet file.
+A quick metadata dump of the sample parquet file.
 
 ```
 File path:  xx_036785.parquet
@@ -89,12 +89,12 @@ Sample DuckDB Query
 ```
 ```
 
-VisIt Views
+VisIt Results
 =
 
-Quick visualization results using LLNL's VisIt on the dataset's energy (e), density (rho), and velocity (vx, vy, vz) columns.
+Visualization results using LLNL's [VisIt](https://visit-dav.github.io/visit-website/index.html) on the dataset's energy (e), density (rho), and velocity (v_x, v_y, v_z) columns.
 
-| Energy | Density | Velocity |
+| Energy (e) | Density (rho) | Velocity (v_x, v_y, v_z) |
 | :---: | :---: | :---: |
 | ![energy](visit_e.png) | ![density](visit_rho.png) | ![velocity](visit_v.png) |
 
