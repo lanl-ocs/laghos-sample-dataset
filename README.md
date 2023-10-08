@@ -47,7 +47,7 @@ sudo apt-get install brotli
 Schema and Statistics
 =
 
-A quick metadata dump of the sample parquet file.
+See below for a quick metadata dump of the sample parquet file.
 
 ```
 File path:  xx_036785.parquet
@@ -111,7 +111,7 @@ GROUP BY vertex_id ORDER BY E;
 └────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┘
 ```
 
-VisIt Results (to get a sense of how the data looks like)
+VisIt Results (so we get a sense of how the data looks like)
 =
 
 Results of using LLNL's [VisIt](https://visit-dav.github.io/visit-website/index.html) on the dataset's energy (e), density (rho), and velocity (v_x, v_y, v_z) columns.
