@@ -141,10 +141,11 @@ Appendix
 
 The command we used to run Laghos was `mpirun -np 32 ./laghos -p 3 -m data/box01_hex.mesh -rs 2 -rp 3 -tf 5.0 -pa -visit -print -k <datadir>`.
 
-Detailed page-level information of the sample parquet file:
+Detailed per-column page-level information of the sample parquet file:
+
+#### Column: element_id
 
 ```
-Column: element_id
 --------------------------------------------------------------------------------
   page   type  enc  count   avg size   size       rows     nulls   min / max
   0-0    data  S _  262144  4.00 B     1024.000 kB          0       "0" / "32767"
@@ -164,8 +165,11 @@ Column: element_id
   0-14   data  S _  262144  4.00 B     1024.000 kB          0       "458752" / "491519"
   0-15   data  S _  262144  4.00 B     1024.000 kB          0       "491520" / "524287"
 
+```
 
-Column: vertex_id
+#### Column: vertex_id
+
+```
 --------------------------------------------------------------------------------
   page   type  enc  count   avg size   size       rows     nulls   min / max
   0-0    data  S _  262144  4.00 B     1024.000 kB          0       "0" / "37497"
@@ -184,9 +188,11 @@ Column: vertex_id
   0-13   data  S _  262144  4.00 B     1024.000 kB          0       "494938" / "534363"
   0-14   data  S _  262144  4.00 B     1024.000 kB          0       "534364" / "573484"
   0-15   data  S _  262144  4.00 B     1024.000 kB          0       "573485" / "612310"
+```
 
+#### Column: v_x
 
-Column: v_x
+```
 --------------------------------------------------------------------------------
   page   type  enc  count   avg size   size       rows     nulls   min / max
   0-0    data  S _  131072  8.00 B     1024.000 kB          0       "-1.9169282E-4" / "0.90284546"
@@ -221,9 +227,11 @@ Column: v_x
   0-29   data  S _  131072  8.00 B     1024.000 kB          0       "-2.6190651E-14" / "4.7983339E-14"
   0-30   data  S _  131072  8.00 B     1024.000 kB          0       "-1.3082658E-11" / "6.4906258E-12"
   0-31   data  S _  131072  8.00 B     1024.000 kB          0       "-4.1766785E-7" / "3.6075055E-6"
+```
 
+#### Column: v_y
 
-Column: v_y
+```
 --------------------------------------------------------------------------------
   page   type  enc  count   avg size   size       rows     nulls   min / max
   0-0    data  S _  131072  8.00 B     1024.000 kB          0       "-0.083469992" / "0.24645918"
@@ -258,9 +266,11 @@ Column: v_y
   0-29   data  S _  131072  8.00 B     1024.000 kB          0       "-5.7530397E-14" / "8.8422378E-14"
   0-30   data  S _  131072  8.00 B     1024.000 kB          0       "-1.1351813E-11" / "2.2977363E-12"
   0-31   data  S _  131072  8.00 B     1024.000 kB          0       "-4.6082717E-9" / "2.61393E-6"
+```
 
+#### Column: v_z
 
-Column: v_z
+```
 --------------------------------------------------------------------------------
   page   type  enc  count   avg size   size       rows     nulls   min / max
   0-0    data  S _  131072  8.00 B     1024.000 kB          0       "-0.080160931" / "0.25458253"
@@ -295,9 +305,11 @@ Column: v_z
   0-29   data  S _  131072  8.00 B     1024.000 kB          0       "-3.8240896E-14" / "6.4833822E-14"
   0-30   data  S _  131072  8.00 B     1024.000 kB          0       "-3.8735716E-13" / "8.3154708E-14"
   0-31   data  S _  131072  8.00 B     1024.000 kB          0       "-4.1689756E-7" / "5.411467E-8"
+```
 
+#### Column: rho
 
-Column: rho
+```
 --------------------------------------------------------------------------------
   page   type  enc  count   avg size   size       rows     nulls   min / max
   0-0    data  S _  131072  8.00 B     1024.000 kB          0       "0.12228425" / "1.0000002"
@@ -332,9 +344,11 @@ Column: rho
   0-29   data  S _  131072  8.00 B     1024.000 kB          0       "0.125" / "1.0"
   0-30   data  S _  131072  8.00 B     1024.000 kB          0       "0.125" / "1.0"
   0-31   data  S _  131072  8.00 B     1024.000 kB          0       "0.125" / "1.0000008"
+```
 
+#### Column: e
 
-Column: e
+```
 --------------------------------------------------------------------------------
   page   type  enc  count   avg size   size       rows     nulls   min / max
   0-0    data  S _  131072  8.00 B     1024.000 kB          0       "0.24999998" / "3.0982606"
@@ -369,9 +383,11 @@ Column: e
   0-29   data  S _  131072  8.00 B     1024.000 kB          0       "0.25" / "2.0"
   0-30   data  S _  131072  8.00 B     1024.000 kB          0       "0.25" / "2.0"
   0-31   data  S _  131072  8.00 B     1024.000 kB          0       "0.24999993" / "2.0"
+```
 
+#### Column: x
 
-Column: x
+```
 --------------------------------------------------------------------------------
   page   type  enc  count   avg size   size       rows     nulls   min / max
   0-0    data  S _  131072  8.00 B     1024.000 kB          0       "2.5180378" / "4.0"
@@ -406,9 +422,11 @@ Column: x
   0-29   data  S _  131072  8.00 B     1024.000 kB          0       "5.0" / "7.0"
   0-30   data  S _  131072  8.00 B     1024.000 kB          0       "4.0" / "6.0"
   0-31   data  S _  131072  8.00 B     1024.000 kB          0       "3.0" / "5.0"
+```
 
+#### Column: y
 
-Column: y
+```
 --------------------------------------------------------------------------------
   page   type  enc  count   avg size   size       rows     nulls   min / max
   0-0    data  S _  131072  8.00 B     1024.000 kB          0       "-0.0" / "1.5327741"
@@ -443,9 +461,11 @@ Column: y
   0-29   data  S _  131072  8.00 B     1024.000 kB          0       "-0.0" / "2.25"
   0-30   data  S _  131072  8.00 B     1024.000 kB          0       "-0.0" / "1.875"
   0-31   data  S _  131072  8.00 B     1024.000 kB          0       "-0.0" / "1.5000001"
+```
 
+#### Column: z
 
-Column: z
+```
 --------------------------------------------------------------------------------
   page   type  enc  count   avg size   size       rows     nulls   min / max
   0-0    data  S _  131072  8.00 B     1024.000 kB          0       "-0.0" / "1.875"
