@@ -111,7 +111,7 @@ GROUP BY vertex_id ORDER BY E;
 └────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┘
 ```
 
-VisIt Results (so we get a sense of how the data looks like)
+VisIt Graphics (so we get a sense of how the data looks like)
 =
 
 Results of using LLNL's [VisIt](https://visit-dav.github.io/visit-website/index.html) on the dataset's energy (e), density (rho), and velocity (v_x, v_y, v_z) columns.
