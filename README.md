@@ -35,7 +35,7 @@ brotli -d <parquet_file>.br
 For example:
 
 ```bash
-brotli -d xx_036785.parquet.br
+brotli -d xx_36785.parquet.br
 ```
 
 On Ubuntu, brotli can be installed through APT:
@@ -47,10 +47,10 @@ sudo apt-get install brotli
 Schema and Statistics
 =
 
-See below for a quick metadata dump for one of the sample parquet files: `xx_036785.parquet`.
+See below for a quick metadata dump for one of the sample parquet files: `xx_36785.parquet`.
 
 ```
-File path:  xx_036785.parquet
+File path:  xx_36785.parquet
 Created by: parquet-cpp-arrow version 13.0.0
 Properties: (none)
 Schema:
@@ -88,7 +88,7 @@ Sample DuckDB SQL Query
 
 ```sql
 SELECT min(vertex_id) AS VID, min(x) as X, min(y) as Y, min(z) as Z, avg(e) AS E
-FROM 'xx_036785.parquet'
+FROM 'xx_36785.parquet'
 WHERE x > 1.5 AND x < 1.6 AND y > 1.5 AND y < 1.6 AND z > 1.5 AND z < 1.6
 GROUP BY vertex_id ORDER BY E;
 ```
